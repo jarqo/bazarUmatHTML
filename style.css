@@ -459,8 +459,29 @@ input[type="submit"], input[type="reset"] {
       .grid-layout.columns-6 .grid-item {
         width: 100% !important; } }
 
-.navbar .side-nav {
-  width: 30%; }
+.sidebar {
+  background: #72bbbf;
+  padding: 10px;
+  width: 200px;
+  position: fixed;
+  height: 100%; }
+  .sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .sidebar ul li {
+      color: white;
+      margin: .3em 0; }
+
+.main-content {
+  flex: 1;
+  padding: 10px;
+  position: relative;
+  margin-left: 200px;
+  height: 100%; }
+
+h1, h2 {
+  margin-top: 0; }
 
 .login-page:after:after {
   content: " ";

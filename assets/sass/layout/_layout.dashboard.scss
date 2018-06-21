@@ -1,6 +1,30 @@
-.navbar {
+.sidebar {
+  background: rgb(114, 187, 191);
+  padding: 10px;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 
-    .side-nav{
-        width: 30%;
+    li {
+      color: white;
+      margin: .3em 0;
     }
+  }
+}
+
+.main-content {
+  flex: 1;
+  padding: 10px;
+  position: relative;
+  margin-left: 200px;
+  height: 100%;
+}
+
+h1,h2 {
+  margin-top: 0;
 }
