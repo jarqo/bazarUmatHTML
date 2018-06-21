@@ -464,7 +464,8 @@ input[type="submit"], input[type="reset"] {
   width: 300px;
   position: fixed;
   height: 100%;
-  color: white; }
+  color: white;
+  overflow: auto; }
   .sidebar h1 {
     color: white; }
   .sidebar ul {
@@ -476,7 +477,7 @@ input[type="submit"], input[type="reset"] {
       margin: .3em 0; }
   .sidebar__account-info {
     text-align: center;
-    padding: 32px; }
+    padding: 32px 32px 10px 32px; }
     .sidebar__account-info .account-img {
       width: 140px;
       height: 140px;
@@ -493,6 +494,31 @@ input[type="submit"], input[type="reset"] {
       height: 2px;
       border: none;
       background-color: white; }
+  .sidebar__menu {
+    color: white; }
+    .sidebar__menu a {
+      display: flex;
+      align-items: center; }
+    .sidebar__menu .menu-list {
+      padding: 12px 35px;
+      position: relative; }
+      .sidebar__menu .menu-list.active i, .sidebar__menu .menu-list.active span {
+        color: #59C2BE; }
+      .sidebar__menu .menu-list.active::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-color: #59C2BE; }
+    .sidebar__menu span {
+      font-size: 18px;
+      color: white; }
+    .sidebar__menu i {
+      color: white;
+      margin-right: 15px;
+      font-size: 20px; }
   .sidebar__navbar {
     text-align: center;
     background-color: #4CB2AA;
