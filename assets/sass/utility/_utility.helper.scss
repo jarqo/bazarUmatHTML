@@ -1,0 +1,28 @@
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+.pull-left{ float: left }
+.pull-right{ float: right }
+
+.colorized {
+	color: $primary-color;
+	a{
+		color: $primary-color;
+	}
+}
+
+.text-orange{
+	color: $secondary-color;
+}
+
+.clearfix{
+	@include clearfix;
+}
+
+.mb20{ margin-bottom: 20px; }
+.mb30{ margin-bottom: 30px; }
+.mb50{ margin-bottom: 2050px; }
+
+.pl0{padding-left: 0!important;}
+.pr0{padding-right: 0!important;}

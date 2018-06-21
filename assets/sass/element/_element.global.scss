@@ -1,0 +1,35 @@
+*{
+	box-sizing: border-box;
+
+	&:before, &:after{
+		box-sizing: border-box;
+	}
+}
+:root{
+	font-size: #{$root-fontSize}px;
+}
+body{
+	font-family            : $primary-font;
+	color                  : $body-color;
+	background-color       : $body-background;
+	word-break             : break-word;
+	margin: 0;
+	-webkit-font-smoothing : antialiased;
+}
+
+a{
+	color           : $primary-color;
+	text-decoration : none;
+	transition      : .2s ease;
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+img{
+	max-width: 100%;
+}
+
+ul,ol{
+	padding-left: 20px;
+}

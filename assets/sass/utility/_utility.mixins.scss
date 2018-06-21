@@ -1,0 +1,19 @@
+@mixin clearfix{
+	&:after{
+		content:" ";
+		clear: both;
+		display: block;
+	}
+}
+
+// Converting PX value to EM based on browser-context variable
+// Usage: @include em(16)
+@mixin em($pixels, $context: $root-fontSize) {
+	font-size: #{$pixels}px;
+	font-size: #{$pixels/$context}em;
+}
+
+@mixin rem($pixels, $context: $root-fontSize) {
+	font-size: #{$pixels}px;
+	font-size: #{$pixels/$context}rem;
+}
