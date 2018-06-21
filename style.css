@@ -463,7 +463,8 @@ input[type="submit"], input[type="reset"] {
   background: #515251;
   width: 300px;
   position: fixed;
-  height: 100%; }
+  height: 100%;
+  color: white; }
   .sidebar h1 {
     color: white; }
   .sidebar ul {
@@ -473,6 +474,25 @@ input[type="submit"], input[type="reset"] {
     .sidebar ul li {
       color: white;
       margin: .3em 0; }
+  .sidebar__account-info {
+    text-align: center;
+    padding: 32px; }
+    .sidebar__account-info .account-img {
+      width: 140px;
+      height: 140px;
+      background-color: darkgray;
+      display: inline-block;
+      border-radius: 50%;
+      border: 5px solid white;
+      background-size: cover;
+      background-position: center center; }
+    .sidebar__account-info .account-name {
+      font-size: 18px;
+      font-weight: 400; }
+    .sidebar__account-info hr {
+      height: 2px;
+      border: none;
+      background-color: white; }
   .sidebar__navbar {
     text-align: center;
     background-color: #4CB2AA;

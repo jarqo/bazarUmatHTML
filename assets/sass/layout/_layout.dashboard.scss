@@ -3,6 +3,7 @@
   width: 300px;
   position: fixed;
   height: 100%;
+  color: white;
 
   h1{
       color: white;
@@ -17,6 +18,33 @@
       color: white;
       margin: .3em 0;
     }
+  }
+
+  &__account-info{
+      text-align: center;
+      padding: 32px;
+
+      .account-img{
+        width: 140px;
+        height: 140px;
+        background-color: darkgray;
+        display: inline-block;
+        border-radius: 50%;
+        border: 5px solid white;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .account-name {
+          font-size: 18px;
+          font-weight: 400;
+      }
+
+      hr{
+          height: 2px;
+          border: none;
+          background-color: white;
+      }
   }
 
   &__navbar {
