@@ -1,9 +1,13 @@
 .sidebar {
-  background: rgb(114, 187, 191);
+  background: #515251;
   padding: 10px;
-  width: 200px;
+  width: 300px;
   position: fixed;
   height: 100%;
+
+  h1{
+      color: white;
+  }
   
   ul {
     margin: 0;
@@ -17,12 +21,55 @@
   }
 }
 
-.main-content {
+.content {
   flex: 1;
-  padding: 10px;
   position: relative;
-  margin-left: 200px;
+  margin-left: 300px;
   height: 100%;
+
+  &__top{
+      background-color: #56C3BE;
+      padding: 18px;
+      text-align: right;
+      color: white;
+
+      .bell-link{
+        display: inline-block;
+        position: relative;
+
+        i {
+            font-size: 23px;
+            color: white;
+        }
+
+        &__count{
+            font-size: 10px;
+            color: white;
+            background-color:#D02027;
+            padding: 2px 4px;
+            border-radius: 50px;
+            font-weight: bold;
+            position: absolute;
+            bottom: -2px;
+            right: -5px;
+        }
+      }    
+  }
+
+  &__head-img{
+      height: 230px;
+      background-color: cornsilk;
+      background-position: center center;
+      background-size: cover;
+
+      &.bg-v1{
+        background-image: url(assets/images/head-img01.jpg);
+      }
+  }
+
+  &__main{
+      padding: 30px;
+  }
 }
 
 h1,h2 {
